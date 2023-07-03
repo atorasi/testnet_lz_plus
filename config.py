@@ -14,7 +14,7 @@ SLEEP_AKTIVE = True
 SLEEP_AKTIVE_FROM = 3 #Минимум секунд
 SLEEP_AKTIVE_TO = 10 #Максимум секунд
 
-#Юзать процентаж от баланса True/False, если False - будет рандомиться минимальная сумма +- 0.0001
+#Юзать процентаж от баланса True/False, если False - будет рандомиться минимальная сумма +- 0.0002
 USE_PERCENT = True
 #Процент OP ETH/ ARB ETH для депа в теснет (ЦЕЛОЕ ЧИСЛО)
 MIN_PERCENT_LZ = 10
