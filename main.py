@@ -26,7 +26,7 @@ def main():
         balance_to_lz = balance_arb if main_chain == 'arbitrum' else balance_op
         
         temp_lz_value = balance_to_lz * randint(MIN_PERCENT_LZ * 1_000, MAX_PERCENT_LZ * 1_000) / 100_000
-        value_to_lz = temp_lz_value if USE_PERCENT == True and temp_lz_value > 0.0002 else randint(20 * 1_000, 30 * 1_000) / 100_000_000
+        value_to_lz = temp_lz_value if USE_PERCENT == True and temp_lz_value > 0.00015 else randint(15 * 1_000, 25 * 1_000) / 100_000_000
         
         logger.info(f'{acc_info} Перевожу {value_to_lz} из сети {main_chain}')
         bridge_lz_hash = bridge_to_geth(key, RPC[main_chain], value_to_lz)
