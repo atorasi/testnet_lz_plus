@@ -15,10 +15,8 @@ telegram - t.me/tripleshizu
 
 twitter - twitter.com/tripleshizu
 
-tiktok - tiktok.com/iloveronaldo
-
 > Если есть советы по коду напишите в лс @qqrwo - tg. Спасибо.
 
 
-> Donate: 0xa02ef2fb3fed54dbb338a304dfb56c43e7179331
+# Donate: 0xa02ef2fb3fed54dbb338a304dfb56c43e7179331
 # Пока
