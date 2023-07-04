@@ -8,7 +8,8 @@ from config import *
 
 with open('private_keys.txt') as file:
     keys = [key.strip() for key in file]
-    
+
+logger.info(f'Загружено {len(keys)} аккаунтов')
     
 def main():
     for acc_num, key in enumerate(keys, start=1):
