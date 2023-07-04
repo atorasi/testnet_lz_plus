@@ -33,14 +33,14 @@ def main():
         bridge_lz_hash = bridge_to_geth(key, RPC[main_chain], value_to_lz)
         
         logger.success(f"{acc_info} Transaction: https://arbiscan.io/tx/{bridge_lz_hash}") if main_chain == 'arbitrum' else (f"{acc_info} Transaction: https://optimistic.etherscan.io/tx/{bridge_lz_hash}")
-        logger.info(f'Сплю {newersleep_aktiv()} секунд между активностями')
         
         logger.info(f'{acc_info} Жду поступления средств в Goerli')
         while temp_geth == balance_geth:
             balance_geth = check_balance(key, RPC['goerli'])
             sleep(3)
         logger.success(f'{acc_info} Средства поступили на счет, Goerli ETH Balance: {balance_geth}')
-    
+        logger.info(f'Сплю {newersleep_aktiv()} секунд между активностями')
+        
         temp_to_scroll = balance_geth * randint(MIN_PERCENT_GETH * 1_000, MAX_PERCENT_GETH * 1000) / 100_000
         
         logger.info(f'{acc_info} Бриджу {temp_to_scroll} gETH в SCROLL')
