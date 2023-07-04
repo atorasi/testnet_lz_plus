@@ -12,7 +12,7 @@ def bridge_to_geth(key: str, rpc: str, value: float) -> hex:
     contract_instance = w3.eth.contract(address='0x0A9f824C05A74F577A536A8A0c673183a872Dff4', abi=abi_read('abies\\bridge_testnet.json'))
     tx = contract_instance.functions.swapAndBridge(
         w3.to_wei(value, 'ether'), 
-        w3.to_wei(value, 'ether')* randint(6000, 7900),
+        w3.to_wei(value, 'ether')* randint(5000, 6000),
         154,
         address,
         address,
